@@ -1,3 +1,3 @@
-module.exports.about = (req,res)=> {
+module.exports.about = (req,res) => {
     return res.render('index',{title: 'About'});
 };
