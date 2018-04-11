@@ -4,9 +4,9 @@ module.exports.homeList = (req,res) => {
 };
 /* GET 'Location Info' Page. */
 module.exports.locationInfo = (req,res) => {
-    res.render('index',{ title: 'Location Info'});
+    res.render('location-info',{ title: 'Location Info'});
 };
 /* GET 'Add Review' Page. */
 module.exports.addReview = (req,res) => {
-    res.render('index',{ title: 'Add Review'});
+    res.render('location-review-form',{ title: 'Add review'});
 };
