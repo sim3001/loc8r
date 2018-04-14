@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var dbURI = 'mongodb://localhost/Loc8r';
+const dbURI = 'mongodb://localhost/Loc8r';
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', ()=>{
@@ -14,3 +14,4 @@ mongoose.connection.on('error', err =>{
 mongoose.connection.on('disconnected', () =>{
     console.log(`Mongoose disconnected.`);
 });
+
